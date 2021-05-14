@@ -4,7 +4,7 @@ Source code of my personal blog.
 
 ## Comments
 
-You can comment on the blog articles using [GitHub Discussion](https://github.com/hendrikmaus/blog/discussions/categories/comments); there is a discussion for every article.
+You can **comment** on the blog articles using [GitHub Discussions](https://github.com/hendrikmaus/blog/discussions/categories/comments); there is a discussion for every article.
 
 ## Want me to Cover Something?
 
