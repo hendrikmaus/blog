@@ -1,7 +1,6 @@
 +++
 title = "Imprint"
-path = "imprint"
-template = "page.html"
+template = "about/section.html"
 +++
 
 ## Data Protection
