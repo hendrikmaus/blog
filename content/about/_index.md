@@ -7,13 +7,15 @@ template = "about/section.html"
 
 ### Static Site Generator "Zola"
 
-tbd.
+A fast static site generator in a single binary with everything built-in:
+
+- [Zola](https://www.getzola.org)
 
 ### Theme "Tale-Zola"
 
 Tale-Zola is a minimal [Zola](https://www.getzola.org) theme helping you to
 build a light and seo-ready blog, and you can customise any information of the
-blog without having to modify the codes of the template. Tala-Zola is a port of
+blog without having to modify the codes of the template. Tala-Zole is a port of
 the Jekyll theme [Tale](https://github.com/chesterhow/tale).
 
 Tale-Zola is seo-ready and it suports the open graph, Twitter cards and JSON-LD.
@@ -29,4 +31,9 @@ You can find the source on [GitHub](https://github.com/aaranxu/tale-zola).
 With Reserved Font Name Libre Baskerville.
 
 Licensed as [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+
+### Utility Used to help Self-Host The Font
+
+I used [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts) to select the font, generate the CSS and download the files.
+
 
