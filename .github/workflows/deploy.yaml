@@ -33,6 +33,7 @@ jobs:
           docker run --rm \
             --volume "${ssh_key_dir}/id_rsa:/root/.ssh/id_rsa" \
             --volume "$(pwd):/srv" \
+            --env GITHUB_SHA \
             --workdir /srv \
             hendrikmaus/blog-builder:${BLOG_BUILDER_VERSION} \
             deploy "${DEPLOY_USER}" "${DEPLOY_HOST}"
