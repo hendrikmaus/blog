@@ -96,7 +96,7 @@ url = "about"
 [extra.footer]
 start_year = "2021"  # start year of the site
 end_year = "2021"    # end year of the site
-info = "| <a href=\"/about#attributions\">attributions</a>"
+info = "| <a href=\"/about#attributions\">attributions</a> | <a href=\"/imprint\">imprint</a>"
 
 
 # The options below are used to refer to the expressions on the pages, and you
