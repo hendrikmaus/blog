@@ -29,7 +29,7 @@ jobs:
           source .env
 
           # build and deploy
-          docker run --rm --tty \
+          docker run --rm \
             --volume "${ssh_key_dir}/id_rsa:/root/.ssh/id_rsa" \
             --volume "$(pwd):/srv" \
             --workdir /srv \
