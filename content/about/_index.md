@@ -3,7 +3,23 @@ title = "About"
 template = "about/section.html"
 +++
 
-_To be written._
+Hi, my name is **Hendrik**.
+
+I work as a **Site Reliability Engineer** at [trivago](https://trivago.com) and I like to write code in **[Rust](https://www.rust-lang.org)**.
+
+You're looking at my _personal_ blog. I like to use this space to write about all the topics that I take an interest in. You can use the [tags](/tags) site to take a peek.
+
+I also value **open-source**, that's why not only this [blog](https://github.com/hendrikmaus/blog) is open-source, but also:
+
+- [helm-templexer](https://github.com/hendrikmaus/helm-templexer) (rust)
+- my [dotfiles](https://github.com/hendrikmaus/dotfiles) (shell)
+- [motion-sensor](https://github.com/hendrikmaus/motion-sensor) (hardware)
+- [openhab-auth-router](https://github.com/hendrikmaus/openhab-auth-router) (golang)
+- [openweather-station](https://github.com/hendrikmaus/openweather-station) (hardware)
+- [openweather-station-companion-app](https://github.com/hendrikmaus/openweather-station-companion-app) (dart w. flutter)
+
+Feel free to browse all of my [repositories on GitHub](https://github.com/hendrikmaus?tab=repositories).
+
 
 ## Attributions
 
