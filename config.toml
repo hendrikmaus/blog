@@ -81,9 +81,9 @@ og_locale = "en_US"
 
 
 # Menu items
-[[extra.menu]]
-name = "Posts"
-url = "/"
+#[[extra.menu]]
+#name = "Posts"
+#url = "/"
 
 [[extra.menu]]
 name = "Tags"
@@ -92,6 +92,10 @@ url = "tags"
 [[extra.menu]]
 name = "About"
 url = "about"
+
+[[extra.menu]]
+name = "Feed"
+url = "atom.xml"
 
 [extra.footer]
 start_year = "2021"  # start year of the site
@@ -114,7 +118,7 @@ disqus_discussion = "Discussion and feedback"
 
 # The contents of the 404 page
 p404 = "404: Page not found"
-p404_info = "Oops! We can't seem to find the page you are looking for."
+p404_info = "Oops! I can't seem to find the page you are looking for."
 p404_back_home_start = "Let's"
 p404_back_home_with_link = "head back home"
 p404_back_home_end = "."
