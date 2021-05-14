@@ -67,7 +67,13 @@ You can also access the boards manager in the traditional way, by using the "Too
 
 However, searching for Espressif boards will not yield any result. We first need to add another source URL to the boards managers configuration. This is the same as with `v1`. A plugin, combined with a very simple setup wizard, could ease this process a lot.
 
-Open the application preferences `Ctrl + ,` and paste `https://dl.espressif.com/dl/package_esp32_index.json` into the field labeled "Additional boards manager URLs" and click OK.
+Open the application preferences `Ctrl + ,` and paste
+
+```
+https://dl.espressif.com/dl/package_esp32_index.json
+```
+
+into the field labeled "Additional boards manager URLs" and click OK.
 
 > If you're running into issues, check out this super detailed guide over on [Random Nerd Tutorials](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/). It is written for `v1`, but the steps are very much the same for `v2`.
 
@@ -149,8 +155,8 @@ I'll be connecting a BME280, which uses i2c. Here is the wiring "diagram":
 ```
 Sensor		ESP32
 ------		-----
-VCC			3V3
-GND			GND
+VCC		3V3
+GND		GND
 SDI (SDA)	GPIO18
 SCK (SCL)	GPIO19
 ```
