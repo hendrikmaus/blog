@@ -14,6 +14,7 @@
     {% set image_width = config.extra.seo.image_width | default(value=0) -%}
   {% endblock seo %}
 
+  <link rel="stylesheet" href="{{ get_url(path="font.css") | safe }}">
   <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
 
   <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="assets/favicon-32x32.png") | safe }}">
