@@ -1,0 +1,31 @@
+---
+name: 'Deployment'
+on:
+  release:
+    types:
+      - 'published'
+
+jobs:
+  deploy:
+    runs-on: 'ubuntu-20.04'
+    steps:
+      - name: 'Checkout'
+        uses: 'actions/checkout@v2'
+      - name: 'Build & Deploy'
+        run: |
+          # prepare ssh key
+          ssh_key_dir=$(mktemp -d)
+          echo "${DEPLOY_KEY:-}" > "${ssh_key_dir}/id_rsa"
+          chmod 600 "${ssh_key_dir}/id_rsa"
+
+          # load .env
+          source .env
+
+          # build and deploy
+          docker run --rm --tty \
+            --volume "${ssh_key_dir}/id_rsa:/root/.ssh/id_rsa" \
+            --volume "$(pwd):/srv" \
+            --workdir /srv \
+            hendrikmaus/blog-builder:${BLOG_BUILDER_VERSION} \
+            deploy "${DEPLOY_USER}" "${DEPLOY_HOST}"
+
