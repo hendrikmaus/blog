@@ -24,6 +24,7 @@ jobs:
           ssh_key_dir=$(mktemp -d)
           echo "${DEPLOY_KEY}" > "${ssh_key_dir}/id_rsa"
           chmod 600 "${ssh_key_dir}/id_rsa"
+          trap "rm -rf ${ssh_key_dir} || true" EXIT
 
           # load .env
           source .env
