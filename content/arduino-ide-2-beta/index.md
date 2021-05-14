@@ -1,7 +1,7 @@
 +++
 title = "Taking a Look at Arduino IDE 2 beta"
 date = 2021-05-14T12:39:00+00:00
-description = "I am taking the beta release of Arduino IDE v2 for a testrun using an ESP32 and temperature + humidity sensor."
+description = "I am taking the beta release of Arduino IDE v2 for a testrun using an ESP32 and a temperature + humidity sensor."
 
 [taxonomies]
 tags = ["Post", "Microcontroller"]
