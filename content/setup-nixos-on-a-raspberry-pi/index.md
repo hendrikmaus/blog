@@ -1,6 +1,6 @@
 +++
 title = "How to Setup NixOS on a Raspberry Pi"
-date = 2021-05-24T00:00:00+00:00
+date = 2021-05-24T18:46:00+01:00
 description = "Install NixOS on your Raspberry Pi and manage its packages and services in a declarative format which allows for creating reliable and reproducible setups."
 
 [taxonomies]
