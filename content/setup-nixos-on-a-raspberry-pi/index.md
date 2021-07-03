@@ -94,7 +94,7 @@ Here is the minimal configuration to apply:
   boot.loader.generic-extlinux-compatible.enable = true;
 
   # Installs Linux 5.4 kernel (May 2021) where latest would go for 5.11 and not boot anymore
-  boot.kernelPackages = pkgs.linuxPackages;
+  boot.kernelPackages = pkgs.linuxPackages_5_4;
 
   # File systems configuration for using the installer's partition layout
   fileSystems = {
@@ -151,4 +151,10 @@ That is it. A very simple, but entirely reproducible, system built using NixOS. 
 NixOS is readily available on the Raspberry Pi. The project offers official support for the Pi 3, however the community provides access to an impressive [list of single board computers](https://nixos.wiki/wiki/NixOS_on_ARM#Community_supported_devices) to install NixOS onto.
 
 I am very pleased with how easy this process was and am excited to start tinkering with this in the homelab.
+
+---
+
+## Updates
+
+- `2021-07-03` I published [How to Update NixOS](@/update-nixos/index.md) and found out that it broke the setup on Raspberry Pi, if the kernel is not pinned to 5.4; I updated the above `/etc/nixos/configuration.nix` to reflect the change for kernel pinning
 
