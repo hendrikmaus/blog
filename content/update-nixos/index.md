@@ -1,10 +1,10 @@
 +++
 title = "How to Update NixOS"
-date = 2021-07-03T00:00:00+00:00
+date = 2021-07-03T00:16:47+00:00
 description = "A quick how-to on updating NixOS"
 
 [taxonomies]
-tags = ["Post", "Software"]
+tags = ["Post", "Software", "Quick Tip"]
 
 [extra]
 author = "Hendrik Maus"
