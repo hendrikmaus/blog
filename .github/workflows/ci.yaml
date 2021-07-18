@@ -1,0 +1,35 @@
+---
+name: 'ci'
+on:
+  pull_request:
+    types:
+      - 'opened'
+      - 'reopened'
+      - 'synchronize'
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: 'ubuntu-20.04'
+    steps:
+      - name: 'Checkout'
+        uses: 'actions/checkout@v2'
+        with:
+          submodules: true
+
+      - name: 'Build'
+        run: |
+          set -euo pipefail
+
+          # load .env
+          source .env
+
+          # build the page
+          docker run --rm \
+            --volume "$(pwd):/srv" \
+            --env GITHUB_SHA \
+            --workdir /srv \
+            hendrikmaus/blog-builder:${BLOG_BUILDER_VERSION} \
+            build

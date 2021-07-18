@@ -20,6 +20,8 @@ jobs:
           DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
           DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
         run: |
+          set -euo pipefail
+
           # prepare ssh key
           ssh_key_dir=$(mktemp -d)
           echo "${DEPLOY_KEY}" > "${ssh_key_dir}/id_rsa"
