@@ -1,5 +1,5 @@
 +++
-title = "How to Unwrap Options in a Function That Returns a Result Type"
+title = "Rust: How to Unwrap Multiple Required Options"
 date = 2021-07-18T11:59:00+00:00
 description = "I recently wanted to find a lean solution to unwrapping multiple Option types and fail on the first None I get in a Rust program."
 
