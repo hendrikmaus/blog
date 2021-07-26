@@ -38,7 +38,7 @@ This will yield:
 Let's say we can only continue if we get `Some`, so we want to throw an error if the `Option` turns out to be `None`.
 We could simply call `unwrap()` to get the value, but we'd risk a panic.
 
-> Of course, we could also use `match` or `if let` here, but that is no where I am headed - please bear with me.
+> Of course, we could also use `match` or `if let` here, but that is not where I am headed - please bear with me.
 
 Since Rust implemented the `?` operator, the natural thing to do would be to use it on the `Option` and either return the value or a `core::option::NoneError`.
 
@@ -101,7 +101,7 @@ When dealing with application-level errors, I find this pattern very useful duri
 
 Let's take this one step further and introduce a specific error type, which allows for more flexibility and leverages more of Rust's error handling capabilities. While the `anyhow` crate allowed us to write good-looking application code, it wouldn't be of any use in a library. In that case, the callee would not only like to see _that_ something went wrong, but also `match` on _what_ exactly went wrong. To achieve that, we need to create our own errors. And to ease the creation of those, we'll use another crate called `thiserror`:
 
-> Why do we need to many crates to do "proper" error handling? Well, Rust's error handling is not exactly ergonomic at the moment. That's why the [Error Handling Project Group recently published what they are working towards](https://blog.rust-lang.org/inside-rust/2021/07/01/What-the-error-handling-project-group-is-working-towards.html). 
+> Why do we need so many crates to do "proper" error handling? Well, Rust's error handling is not exactly ergonomic at the moment. That's why the [Error Handling Project Group recently published what they are working towards](https://blog.rust-lang.org/inside-rust/2021/07/01/What-the-error-handling-project-group-is-working-towards.html). 
 
 ```shell
 cargo add thiserror@1
