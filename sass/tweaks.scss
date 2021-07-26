@@ -1,0 +1,34 @@
+* {
+  line-height: 1.75;
+}
+
+html {
+  font-size: medium;
+
+  @media (min-width: 600px) {
+    font-size: larger;
+  }
+}
+
+pre {
+  line-height: 1;
+}
+
+pre code {
+  font-size: medium;
+  @media (min-width: 600px) {
+    font: 400 0.8rem/1.0 SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace
+  }
+}
+
+blockquote {
+  margin: 42px auto;
+  color: #838383;
+
+  @media (min-width: 600px) {
+    margin: 42px auto;
+    font-size: large;
+    color: #838383;
+  }
+}
+
