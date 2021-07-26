@@ -68,7 +68,7 @@ cargo add anyhow@1
 
 > _How did I know that I want to limit my `Cargo.toml` entry to the major version of the crate and why?_
 > 
-> I ran `cargo search anyhow` and looked at the latest version. For crates that have a major version, we can limit our `Cargo.toml` entry to `crate_name = "1"` to get all patches (`1.0.0` -> `1.0.3`) and features (`1.0.3` -> `1.1.0`) on `cargo update`. That is safe due to the nature of semantic versioning. For crates which still have a `0.x.x` version, the minor version is treated as major version, hence we'd use `crate_name = 0.1`.
+> I ran `cargo search anyhow` and looked at the latest version. For crates that have a major version, we can limit our `Cargo.toml` entry to `crate_name = "1"` to get all patches (`1.0.0` -> `1.0.3`) and features (`1.0.3` -> `1.1.0`) on `cargo update`. That is safe due to the nature of semantic versioning. For crates which still have a `0.x.x` version, the minor version is treated as major version, hence we'd use `crate_name = "0.1"`.
 
 Now let's have `main` return the `Result` type defined by the `anyhow` crate:
 
@@ -76,7 +76,7 @@ Now let's have `main` return the `Result` type defined by the `anyhow` crate:
 fn main() -> anyhow::Result<()> {  }
 ```
 
-The `anyhow` crate provides a single `Error` type that let's us replace almost all calls to `unwrap()` width `?`, thereby allowing us to write much leaner application code.
+The `anyhow` crate provides a single `Error` type that let's us replace almost all calls to `unwrap()` with `?`, thereby allowing us to write much leaner application code.
 
 We can use another helper called `anyhow::Context` to return an error with a custom message, much like `.expect("some message")`, whenever our option turns out to be `None`. So essentially, this allows us to convert an `Option` to a `Result` and add some written context that would be printed to the terminal when failing. The application would not panic anymore.
 
