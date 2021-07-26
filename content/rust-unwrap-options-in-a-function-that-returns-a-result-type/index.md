@@ -59,7 +59,7 @@ error[E0277]: the `?` operator can only be used in a function that returns `Resu
   = note: required by `from_error`
 ```
 
-Using the `anyhow` crate, we can implement a lean solution.
+However, `main` can return any `Result` type we want. For application code, the `anyhow` crate is a really lean solution:
 
 ```shell
 # haven't seen this? install https://crates.io/crates/cargo-edit
@@ -68,7 +68,7 @@ cargo add anyhow@1
 
 > _How did I know that I want to limit my `Cargo.toml` entry to the major version of the crate and why?_
 > 
-> I ran `cargo search anyhow` and looked at the latest version. For crates that have a major version, we can limit our `Cargo.toml` entry to `crate_name = "1"` to get all patches and features on `cargo update`. That is safe due to the nature of semantic versioning. For crates which still have a `0.x.x` version, the minor version is treated as major version, hence we'd use `crate_name = 0.1`.
+> I ran `cargo search anyhow` and looked at the latest version. For crates that have a major version, we can limit our `Cargo.toml` entry to `crate_name = "1"` to get all patches (`1.0.0` -> `1.0.3`) and features (`1.0.3` -> `1.1.0`) on `cargo update`. That is safe due to the nature of semantic versioning. For crates which still have a `0.x.x` version, the minor version is treated as major version, hence we'd use `crate_name = 0.1`.
 
 Now let's have `main` return the `Result` type defined by the `anyhow` crate:
 
@@ -76,7 +76,11 @@ Now let's have `main` return the `Result` type defined by the `anyhow` crate:
 fn main() -> anyhow::Result<()> {  }
 ```
 
-Then we can use `anyhow::Context` and `?` to return an error whenever our option turns out to be `None`. Moreover, we are able to provide a context to the error, which would be printed to the terminal when the program exits.
+The `anyhow` crate provides a single `Error` type that let's us replace almost all calls to `unwrap()` width `?`, thereby allowing us to write much leaner application code.
+
+We can use another helper called `anyhow::Context` to return an error with a custom message, much like `.expect("some message")`, whenever our option turns out to be `None`. So essentially, this allows us to convert an `Option` to a `Result` and add some written context that would be printed to the terminal when failing. The application would not panic anymore.
+
+> Beware that you should not use `anyhow` in library code, because it only defines a single `Error` type, and users of a library wouldn't have anything to match on.
 
 ```rust
 fn main() -> anyhow::Result<()> {
@@ -113,7 +117,7 @@ enum Error {
 }
 ```
 
-> This example is very generic, there is a more realistic one at the end of the article, stay tuned.
+> This example is very generic; there is a more realistic one at the end of the article, so stay tuned.
 
 Now we can replace the `context()` call with `ok_or()` to provide the custom error type by converting into a `Result` type:
 
@@ -148,7 +152,7 @@ The difference becomes more pronounced when passing the created error to the `db
 )
 ```
 
-The first one is very generic and only contains a description, against the second one, I could actually match and determine its type like in this more realistic example:
+The first one is very generic and only contains a description, versus the second one, I could actually match and determine its type like in this more realistic example:
 
 ```rust
 use thiserror::Error;
@@ -213,7 +217,7 @@ fn main() -> anyhow::Result<()> {
 }
 ```
 
-This program tries to create some sort of part and wants to record all available parts in an inventory. However, a part might miss a number and a description, as those fields are optional. By using specific error types, the program can determine _what_ failed, try to recover and try again. The behavior is described in comments for the sake of simplicity.
+This program tries to create some sort of part and wants to record all available parts in an inventory. However, a part might be missing a number and a description, as those fields are optional. By using specific error types, the program can determine _what_ failed, try to recover and try again. The behavior is described in comments for the sake of simplicity.
 
 ## Conclusion
 
