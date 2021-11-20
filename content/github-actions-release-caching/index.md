@@ -162,6 +162,6 @@ Once something changes in `Cargo.lock`, I reckon it will update the crates.io in
 
 ## Conclusion
 
-This topic is a known issue, and it can be tracked at [actions/cache]#556(https://github.com/actions/cache/issues/556). I hope that GitHub will one day natively support release caches in the existing infrastructure.
+This topic is a known issue, and it can be tracked at [actions/cache#556](https://github.com/actions/cache/issues/556). I hope that GitHub will one day natively support release caches in the existing infrastructure.
 
 However, this workaround can serve as a solid base to speed up release builds in the meantime.
