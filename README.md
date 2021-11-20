@@ -10,3 +10,6 @@ You can **comment** on the blog articles using [GitHub Discussions](https://gith
 
 Please [create an issue](https://github.com/hendrikmaus/blog/issues/new/choose).
 
+## Found an Error?
+
+Please submit a pull-request.
