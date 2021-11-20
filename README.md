@@ -1,6 +1,6 @@
 # blog.hendrikmaus.dev
 
-Source code of my personal blog.
+Source code of my [personal blog](https://blog.hendrikmaus.dev).
 
 ## Comments
 
