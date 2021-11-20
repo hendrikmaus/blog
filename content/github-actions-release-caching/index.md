@@ -1,6 +1,6 @@
 +++
 title = "GitHub Actions: How to Implement Caching For Releases (Rust as Example)"
-date = 2021-11-19T19:43:00+00:00
+date = 2021-11-20T12:00:00+00:00
 description = "As of November 2021, GitHub Actions' own caching mechanism does not support to share caches between releases, i.e. a release (git tag) of v1.1.0 cannot re-use the cache built for v1.0.0"
 
 [taxonomies]
@@ -16,7 +16,7 @@ author = "***REMOVED***"
 
 ## Context
 
-As of today, which is November 19th 2021, GitHub Actions does support sharing caches between `git tags`, i.e. when building a release of `v1.1.0`, one cannot re-use the cache built when `v1.0.0` was released. That is because the native caching system is built for *branches*.[^docs]
+As of today, which is November 20th 2021, GitHub Actions does support sharing caches between `git tags`, i.e. when building a release of `v1.1.0`, one cannot re-use the cache built when `v1.0.0` was released. That is because the native caching system is built for *branches*.[^docs]
 
 > Aside: this is not entirely true. You *can* build and store a cache on a tag, but you can only re-use it, when building the *very same* tag again.
 
