@@ -12,6 +12,8 @@ author = "Hendrik Maus"
 
 *tl;dr: Please find a working reference implementation on [GitHub](https://github.com/hendrikmaus/github-actions-release-cache-workaround-rust).*
 
+*Update: I turned the example below into a GitHub Action, available at [hendrikmaus/custom-cache-action](https://github.com/hendrikmaus/custom-cache-action).*
+
 > *If you are reading this at a later point in time, GitHub might have delivered this feature.*
 
 ## Context
