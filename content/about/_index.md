@@ -12,7 +12,8 @@ You're looking at my _personal_ blog. I like to use this space to write about al
 I also value **open-source**, that's why not only this [blog](https://github.com/hendrikmaus/blog) is open-source, but also:
 
 - [helm-templexer](https://github.com/hendrikmaus/helm-templexer) (rust)
-- my [dotfiles](https://github.com/hendrikmaus/dotfiles) (shell)
+- [kube-leader-election](https://github.com/hendrikmaus/kube-leader-election) (rust)
+- [custom-cache-action](https://github.com/hendrikmaus/custom-cache-action) (shell)
 - [motion-sensor](https://github.com/hendrikmaus/motion-sensor) (hardware)
 - [openhab-auth-router](https://github.com/hendrikmaus/openhab-auth-router) (golang)
 - [openweather-station](https://github.com/hendrikmaus/openweather-station) (hardware)
