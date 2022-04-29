@@ -7,7 +7,7 @@ description = "I recently wanted to find a lean solution to unwrapping multiple 
 tags = ["Post", "Rust", "Software"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 Let's say we have a function that returns an `Option`.

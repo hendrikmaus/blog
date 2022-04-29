@@ -7,7 +7,7 @@ description = "I am taking the beta release of Arduino IDE v2 for a testrun usin
 tags = ["Post", "Microcontroller"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 Today I want to take a look at beta release 5 of the new Arduino IDE 2. I will be using an ESP32 board and a temperature + humidity sensor to build a very simple sketch, which will print the values to the serial monitor.

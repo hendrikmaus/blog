@@ -7,7 +7,7 @@ description = "I'll showcase how I used my Android phone to create a webcam that
 tags = ["Post", "Workspace"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 I love to work from home. And I like my workspace to be ergonomic as well. Ergonomics at the workplace is usually something you do for yourself, however recently I did some improvements for everybody who interacts with me in order to improve their experience as much as I can from where I stand (or sit, most of the time):

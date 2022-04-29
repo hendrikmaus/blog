@@ -7,7 +7,7 @@ description = "A quick how-to on updating NixOS"
 tags = ["Post", "Software", "Quick Tip"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 I recently wrote a post called [How to Setup NixOS on a Raspberry Pi](@/setup-nixos-on-a-raspberry-pi/index.md) and haven't touched the system I setup there in a little while. Now I booted it back up and found that there has been a new release of NixOS in the meantime.

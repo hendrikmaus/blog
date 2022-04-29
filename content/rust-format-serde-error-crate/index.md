@@ -7,7 +7,7 @@ description = "Render `serde` errors for humans to make mistakes in configuratio
 tags = ["Post", "Rust", "Software"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 ## Foreword
