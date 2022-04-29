@@ -1,0 +1,2 @@
+{% set data = load_data(path="content/imprint/data.txt") %}
+{% if data %}{{ data | safe }}{% else %}No data found{% endif %}
