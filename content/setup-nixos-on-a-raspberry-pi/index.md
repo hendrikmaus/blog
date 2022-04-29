@@ -7,7 +7,7 @@ description = "Install NixOS on your Raspberry Pi and manage its packages and se
 tags = ["Post", "Hardware"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 This article will walk through the steps of installing NixOS 20.09 on a Raspberry Pi Model 3 B+. At the time of this writing (May 2021) NixOS officially supports running on said board using the `aarch64-linux` build. Many more boards are provided with community support though.

@@ -7,7 +7,7 @@ description = "How to build a self watering planter to save water, time and use 
 tags = ["Post", "Gardening", "DIY"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 I am going to walk you through the process of building a self watering planter with readily available materials. Use less water overall and attend to your plants less often to give them said water. Use the concept of wicking, which you are familiar with if you've ever seen an oil lamp with a wick hanging down in a reservoir. Keep any fertilizer where it is being used without washing it all into the ground water. 

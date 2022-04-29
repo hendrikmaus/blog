@@ -5,7 +5,7 @@ ARG JUST_VERSION
 ARG BLOG_BUILDER_VERSION
 
 LABEL dev.hendrikmaus.version=${BLOG_BUILDER_VERSION}
-LABEL dev.hendrikmaus.maintainer="***REMOVED***"
+LABEL dev.hendrikmaus.maintainer="Hendrik Maus"
 LABEL dev.hendrikmaus.source=https://github.com/hendrikmaus/blog
 LABEL dev.hendrikmaus.tools.zola.source=https://github.com/getzola/zola
 LABEL dev.hendrikmaus.tools.zola.version=${ZOLA_VERSION}

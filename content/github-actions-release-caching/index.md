@@ -7,7 +7,7 @@ description = "As of November 2021, GitHub Actions' own caching mechanism does n
 tags = ["Post", "CI"]
 
 [extra]
-author = "***REMOVED***"
+author = "Hendrik Maus"
 +++
 
 *tl;dr: Please find a working reference implementation on [GitHub](https://github.com/hendrikmaus/github-actions-release-cache-workaround-rust).*
