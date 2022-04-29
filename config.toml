@@ -98,7 +98,7 @@ url = "atom.xml"
 
 [extra.footer]
 start_year = "2021"                                                                            # start year of the site
-end_year = "2022s"                                                                             # end year of the site
+end_year = "2022"                                                                             # end year of the site
 info = "| <a href=\"/about#attributions\">attributions</a> | <a href=\"/imprint\">imprint</a>"
 
 
