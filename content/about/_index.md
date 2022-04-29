@@ -26,7 +26,7 @@ Feel free to browse all of my [repositories on GitHub](https://github.com/hendri
 
 These are the free resources I used to create this blog.
 
-_If your project is missing here, please contact me so I can add it: ***REMOVED***_
+_If your project is missing here, please contact me so I can add it: &#104;&#101;&#108;&#108;&#111;&#064;&#104;&#101;&#110;&#100;&#114;&#105;&#107;&#109;&#097;&#117;&#115;&#046;&#100;&#101;&#118;_
 
 ### Static Site Generator "Zola"
 
